@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style1.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.15.3-web/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/4ad1e91a17.js" crossorigin="anonymous"></script>
+    <title>DISCOVER MEMORIES | WELCOME</title>
+  </head>
+  <body>
+    
+            
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img class="logoimg" src="./IMG/logopng.png" alt="Web logo"
+        /></a>
+      </div>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars fa-3x"></i>
+        </button>
+      <div class="nav-links">
+        <ul class="navitems" id="navitems">
+          <li><a href="index.html">home</a></li>
+          <li><a href="Packages.html">Packages</a></li>
+          <li><a href="MICE.html">MICE</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+      
+         
+          <span class="icons">
+             <li><a href="https://www.facebook.com/thediscovermemories/"><i class="fab fa-facebook fa-2x"></i></a></li>
+             <li><a href="https://www.instagram.com/discover.memories/"><i class="fab fa-instagram fa-2x"></i></a></li>
+             <li><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+          </span>
+        </ul>
+      </div>
+      
+       
+    </nav>
+    <script>
+      const hamburger=document.getElementById("hamburger");
+      const navitems=document.getElementById("navitems");
+     
+
+         hamburger.addEventListener("click",()=>{
+            navitems.classList.toggle("show");
+       
+         });
+    </script>
+
+<style>
+    body {
+      font-family: Arial;
+      margin: 0;
+    }
+    
+    * {
+      box-sizing: border-box;
+    }
+    
+    img {
+      vertical-align: middle;
+    }
+    
+    /* Position the image container (needed to position the left and right arrows) */
+    .container {
+      position: relative;
+    }
+
+    .row {
+  height: 123px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+    
+    /* Hide the images by default */
+    .mySlides {
+      display: none;
+    }
+    
+    /* Add a pointer when hovering over the thumbnail images */
+    .cursor {
+      cursor: pointer;
+    }
+    
+    /* Next & previous buttons */
+    .prev,
+    .next {
+      cursor: pointer;
+      position: absolute;
+      top: 40%;
+      width: auto;
+      padding: 16px;
+      margin-top: -50px;
+      color: white;
+      font-weight: bold;
+      font-size: 20px;
+      border-radius: 0 3px 3px 0;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    
+    /* Position the "next button" to the right */
+    .next {
+      right: 0;
+      border-radius: 3px 0 0 3px;
+    }
+    
+    /* On hover, add a black background color with a little bit see-through */
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, 0.8);
+    }
+    
+    /* Number text (1/3 etc) */
+    .numbertext {
+      color: #f2f2f2;
+      font-size: 12px;
+      padding: 8px 12px;
+      position: absolute;
+      top: 0;
+    }
+    
+    /* Container for image text */
+    .caption-container {
+      text-align: center;
+      background-color: #222;
+      padding: 2px 16px;
+      color: white;
+    }
+    
+    .row:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+    
+    /* Six columns side by side */
+    .column {
+      float: left;
+      width: 16.66%;
+    }
+    
+    /* Add a transparency effect for thumnbail images */
+    .demo {
+      opacity: 0.6;
+    }
+    
+    .active,
+    .demo:hover {
+      opacity: 1;
+    }
+    </style>
+    
+    <!-- <h2 style="text-align:center">Slideshow Gallery</h2> -->
+    
+    <div class="container">
+      <div class="mySlides">
+        <div class="numbertext">1 / 6</div>
+        <img src="mice\1.JPG" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">2 / 6</div>
+        <img src="mice\2.JPG" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">3 / 6</div>
+        <img src="mice\3.JPG" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">4 / 6</div>
+        <img src="mice\4.JPG" style="width:100%">
+      </div>
+    
+      <div class="mySlides">
+        <div class="numbertext">5 / 6</div>
+        <img src="mice\5.JPG" style="width:100%">
+      </div>
+        
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="mice\6.JPG" style="width:100%">
+      </div>
+      <!-- <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="mice\7.JPG" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="mice\8.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="mice\9.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="mice\10.jpg" style="width:100%">
+      </div>
+      <div class="mySlides">
+        <div class="numbertext">6 / 6</div>
+        <img src="mice\11.jpg" style="width:100%">
+      </div> -->
+        
+      <a class="prev" onclick="plusSlides(-1)">❮</a>
+      <a class="next" onclick="plusSlides(1)">❯</a>
+    
+      <div class="caption-container">
+        <p id="caption"></p>
+      </div>
+    
+      <div class="row">
+        <div class="column">
+          <img class="demo cursor" src="mice\1.JPG" style="width:100%" onclick="currentSlide(1)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="mice\2.JPG" style="width:100%" onclick="currentSlide(2)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="mice\3.JPG" style="width:100%" onclick="currentSlide(3)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="mice\4.JPG" style="width:100%" onclick="currentSlide(4)" >
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="mice\5.JPG" style="width:100%" onclick="currentSlide(5)" >
+        </div>    
+        <div class="column">
+          <img class="demo cursor" src="mice\6.JPG" style="width:100%" onclick="currentSlide(6)" >
+        </div>
+        <!-- <div class="column">
+          <img class="demo cursor" src="mice\7.JPG" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="mice\8.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="mice\9.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="mice\10.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div>
+        <div class="column">
+          <img class="demo cursor" src="mice\11.jpg" style="width:100%" onclick="currentSlide(6)" alt="Snowy Mountains">
+        </div> -->
+      </div>
+    </div>
+    
+    <script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+    </script>
+
+    <section class="pp">
+      <div class="container">
+        <div class="Privacy-Policy">
+          <h2 class="lg-heading text-black pp-heading1">MICE</h2>
+          <p class="text-grey p1">
+            Discover Memories offers specialist MICE services that create a lasting impression for every
+meeting, incentive, conference or Exhibition &amp; event. We at,Discover Memories, apply our
+depth domain experience and creative thinking to help your business host an amazing forum
+that achieves your desired outcomes. Through our exceptional catch in hotels, transportand
+related authorities, we providesthe whole package, travel and entertainment at leading rates.
+Discover Memories extends event management services. Our highly skilled teams blend their
+expertise with creativity and industry alliances to maximize your return on investment for every
+occasion.With expertise that spans far beyond travel into the inspirational world of corporate
+events.We manage everything from meetings to conferences, to incentives, to product
+launches and exclusive gala dinners.
+          </p>
+          <br />
+          
+
+        <div class="User-Information">
+          <h2 class="lg-heading text-black pp-heading2">Meetings:</h2>
+          <p class="text-grey p1">
+            We arrange the best range of meeting facilities which will give you a ravishing
+            environment for your colleagues. We offer best in class services and are constantly updating
+            our Treasury of venues, meeting halls and facilities.
+          </p>
+        </div>
+
+        <div class="Disclosure-of-User-Information">
+          <h2 class="lg-heading text-black pp-heading3">
+            Incentives:
+          </h2>
+          <p class="text-grey p1">
+            Our team understands the importance of delivering the wow factor with all our
+incentives event or travel. With professionalism at the forefront, we strive to always take it a
+step further so our customers must have a dream of coming back with us.
+          </p>
+        </div>
+        <div class="Accuracy-and-Security">
+          <h2 class="lg-heading text-black pp-heading4">
+            Conferences:
+          </h2>
+          <p class="text-grey p1">
+             We organize professional conferences at the best possible venues accordance of
+our client’s needs. Our services ensure a smooth implementation which can save organizers
+immeasurable time and effort.
+          </p>
+        </div>
+        <div class="Usernames-and-Passwords">
+          <h2 class="lg-heading text-black pp-heading5">
+            Exhibitions:
+          </h2>
+          <p class="text-grey p1">
+            Our team is known for its professionalism and expertisein arranging all types of
+events. We deliver everything ranging from promotional and corporate events to awards
+ceremonies and product launches, we ensure that nothing is left to chance so you can focus on
+what really matters to you. 
+          </p>
+        </div>
+        <div class="External-Links">
+          <h2 class="lg-heading text-black pp-heading1">Why to Choose Discover Memories:</h2>
+          <p class="text-grey p1">
+            Discover Memories start by understanding your objectives, including the needs and interests of
+            your audience, and how your event can help you fulfill those needs. Working to your specific
+            objectives, we then create&amp; lift your unique event from the ground up. From creative planning
+            to execution, we deliver innovative solutions. We believe in match of your desired goals with
+            our exceptional organizing skills that complete your event from start to finish.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="policy">
+      <div class="policy-block">
+        <div class="block block1">
+          <h2 class="md-heading">Products</h2>
+          <ul class="Products">
+            <li><a class="link-color" href="Packages.html">Packages</a></li>
+            <li><a class="link-color" href="MICE.html">Events</a></li>
+          </ul>
+        </div>
+        <div class="block block2">
+          <h2 class="md-heading">Support</h2>
+          <ul class="Support">
+            <li><a class="link-color" href="contact.html">Contact Us</a></li>
+            <li><a class="link-color" href="mailto:resv.discovermemories@gmail.com">Mail</a></li>
+          </ul>
+        </div>
+        <div class="block block3">
+          <h2 class="md-heading">Disclaimer</h2>
+          <ul class="Disclaimer">
+            <li>
+              <a class="link-color" href="./Terms&Conditions.html"
+                >Terms and conditions</a
+              >
+            </li>
+            <li>
+              <a class="link-color" href="./PrivacyPolicy.html"
+                >Privacy Policy</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="social-media-links">
+        <a href="https://www.facebook.com/thediscovermemories/" class="facebook"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=7300431093&text=Hello%2C%20I'm%20here%20about..." class="whatsapp"><i class="fab fa-whatsapp fa-2x"></i></a>
+        <a href="https://www.instagram.com/discover.memories/" class="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+      </div>
+      <p>Discover Memories &copy; 2021, All Rights Reserved</p>
+    </footer>
+  </body>
+</html>

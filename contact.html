@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./CSS/style1.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.15.3-web/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <script src="https://kit.fontawesome.com/4ad1e91a17.js" crossorigin="anonymous"></script>
+    <title>DISCOVER MEMORIES | WELCOME</title>
+  </head>
+  <body>
+    <nav class="nav-bar">
+      <div class="nav-logo">
+        <a href="index.html">
+          <img class="logoimg" src="./IMG/logopng.png" alt="Web logo"
+        /></a>
+      </div>
+        <button class="hamburger" id="hamburger">
+          <i class="fas fa-bars fa-3x"></i>
+        </button>
+      <div class="nav-links">
+        <ul class="navitems" id="navitems">
+          <li><a href="index.html">home</a></li>
+          <li><a href="tour.html">Tours</a></li>
+          <li><a href="MICE.html">MICE</a></li>
+          <li><a href="about.html">about</a></li>
+          <li><a href="contact.html">contact</a></li>
+      
+         
+          <span class="icons">
+             <li><a href="https://www.facebook.com/thediscovermemories/"><i class="fab fa-facebook fa-2x"></i></a></li>
+             <li><a href="https://www.instagram.com/discover.memories/"><i class="fab fa-instagram fa-2x"></i></a></li>
+             <li><a href="https://web.whatsapp.com/"><i class="fab fa-whatsapp fa-2x"></i></a></li>
+          </span>
+        </ul>
+      </div>
+      
+       
+    </nav>
+    <script>
+      const hamburger=document.getElementById("hamburger");
+      const navitems=document.getElementById("navitems");
+     
+
+         hamburger.addEventListener("click",()=>{
+            navitems.classList.toggle("show");
+       
+         });
+    </script>  
+    <section class="contact-form">
+        <div class="container">
+          <div class="form-wrapper">
+            <div class="company-address">
+              <div class="address-group">
+                <i class="fas fa-map-marker-alt fa-3x text-red"></i>
+                <h2 class="text-gray md-heading">LOCATION</h2>
+                <p>Shop No-110 1st Floor Vaishali Tower, Nursery Circle, Vaishali Nagar, Jaipur - 302021 </p>
+              </div>
+              <div class="address-group">
+                <i class="far fa-envelope fa-3x text-red"></i>
+                <h2 class="text-gray md-heading">E-MAIL  </h2>
+                <p>resv.discovermemories@gmail.com</p>
+              </div>
+              <div class="address-group">
+                <i class="fas fa-phone-square-alt fa-3x text-red"></i>
+                <h2 class="text-gray md-heading">CALL</h2>
+                <p>+91 9983850518</p>
+                <p>+91 7300431093</p>
+              <img src="./IMG/ian-dooley-DJ7bWa-Gwks-unsplash.jpg" class="contact-img" alt="logo" />
+              </div>
+            </div>  
+            <form action="mail-handler.php" method="POST" class="form">
+              <h1 id="h1">Contact Us</h1>
+              <p class="text-gray">
+                Let us know your questions, suggestions and concerns by filling
+                out the contact form below.
+              </p>
+              <div class="form-group">
+                <label for="username" title="Name">Name</label> 
+                <input
+                  type="text"
+                  name="name"
+                  id="username"
+                  placeholder="Your Name..."
+                  title="Name"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Phone" title="Mobile Number">Mobile</label>
+                <input
+                  type="number"
+                  name="phone"
+                  id="Phone"
+                  placeholder=" Your Mobile Number..."
+                  title="Mobile Number"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="E-Mail" title="E-mail">E-MAIL</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="E-Mail"
+                  placeholder="Your E-mail..."
+                  title="E-mail"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <label for="Message" class="textarea" title="Message"
+                  >Message</label
+                >
+                <textarea
+                  class="text-area"
+                  name="msg"
+                  id="Message"
+                  placeholder="Your Opinion/Queries/Suggestions..."
+                  title="Message"
+                  rows="10"
+                  cols="75"
+                ></textarea>
+              </div>
+              <button type="submit" class="form-btn" onclick={handleSubmit(event)}>Submit</button>
+            </form>
+          </div>
+        </div>
+      </section>
+      <section class="policy">
+        <div class="policy-block">
+          <div class="block block1">
+            <h2 class="md-heading">Products</h2>
+            <ul class="Products">
+              <li><a class="link-color" href="Packages.html">Packages</a></li>
+              <li><a class="link-color" href="MICE.html">Events</a></li>
+            </ul>
+          </div>
+          <div class="block block2">
+            <h2 class="md-heading">Support</h2>
+            <ul class="Support">
+              <li><a class="link-color" href="contact.html">Contact Us</a></li>
+              <li><a class="link-color" href="mailto:resv.discovermemories@gmail.com">Mail</a></li>
+            </ul>
+          </div>
+          <div class="block block3">
+            <h2 class="md-heading">Disclaimer</h2>
+            <ul class="Disclaimer">
+              <li>
+                <a class="link-color" href="./Terms&Conditions.html"
+                  >Terms and conditions</a
+                >
+              </li>
+              <li>
+                <a class="link-color" href="./PrivacyPolicy.html"
+                  >Privacy Policy</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+
+
+
+    <footer class="footer">
+        <div class="social-media-links">
+          <a href="https://www.facebook.com/thediscovermemories/" class="facebook"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://api.whatsapp.com/send?phone=7300431093&text=Hello%2C%20I'm%20here%20about..." class="whatsapp"><i class="fab fa-whatsapp fa-2x"></i></a>
+        <a href="https://www.instagram.com/discover.memories/" class="instagram"><i class="fab fa-instagram fa-2x"></i></a>
+        </div>
+        <p>Discover Memories &copy; 2021, All Rights Reserved</p>
+      </footer>
+    </body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="./JS/app.js"></script>
+  </html>
+  
